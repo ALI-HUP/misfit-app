@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 export default function EssaysPage() {
   return (
-    <div className="min-h-screen p-5 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Header />
 
 

@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 
 export default function VideosPage() {
   return (
-    <div className="min-h-screen p-6 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Header />
 
-      <h1 className="text-3xl font-bold mb-16 text-center">youtube Videos</h1>
+      <h1 className="text-3xl font-bold mb-14 text-center">youtube Videos</h1>
 
       <div className="flex gap-20 items-center">
         <div className="aspect-video w-[420px]">

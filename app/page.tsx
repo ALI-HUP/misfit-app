@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen text-white flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Header />
 
       <main className="text-center p-8 flex flex-col items-center">

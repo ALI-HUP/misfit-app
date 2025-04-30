@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center">
       <Header />
       
       <div className="mt-10">
