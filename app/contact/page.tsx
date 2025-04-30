@@ -1,9 +1,8 @@
-// app/contact/page.tsx
 import React from "react";
 
-export default function ContactPage() {
+export default function Contact() {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6">
       <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
 
       <form className="w-full max-w-md space-y-4">

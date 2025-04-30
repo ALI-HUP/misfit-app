@@ -2,4 +2,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../public//background//dark-elegant-red-gradient-with-noise-texture-forced-perspective-photo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }
