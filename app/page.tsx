@@ -3,18 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import YalIcon from "@/public/svg/logo-training-fitness-gym-logo-illustration-template-vector.jpg";
 import MotIcon from "@/public/svg/images.jpeg";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen text-white flex flex-col items-center">
-      <header className="w-full m-5 p-5 flex justify-between items-center max-w-5xl bg-red-950/35 rounded-full">
-        <h1 className="text-3xl font-bold">Misfit</h1>
-        <nav className="text-md font-semibold space-x-6">
-          <Link href="/essays" className="hover:underline">Essays</Link>
-          <Link href="/videos" className="hover:underline">Videos</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
-        </nav>
-      </header>
+      <Header />
 
       <main className="text-center p-8 flex flex-col items-center">
         <h2 className="text-5xl font-extrabold mb-10">Welcome to Misfit!</h2>
@@ -39,16 +33,16 @@ export default function Home() {
             alt="Motivation"
             className="w-36 h-36 rounded-full border-5 border-white"
           />
-          <label htmlFor="" className="p-3">Be a Gymbo</label>
+          <label className="p-3">Be a Gymbo</label>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <Image
             src={YalIcon}
             alt="Sponsor"
             className="w-36 h-36 rounded-full border-4 border-white shadow-lg"
           />
-          <label htmlFor="" className="p-3">Our Sponser: YAL</label>
+          <label className="p-3">Our Sponsor: YAL</label>
         </div>
       </section>
     </div>
