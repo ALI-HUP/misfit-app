@@ -1,10 +1,8 @@
-// app/page.tsx
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 text-white flex flex-col items-center">
-      {/* Header */}
       <header className="w-full p-6 flex justify-between items-center max-w-5xl bg-blue-800">
         <h1 className="text-2xl font-bold">Misfit</h1>
         <nav className="space-x-4">
@@ -14,7 +12,6 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Hero Section */}
       <main className="text-center p-8 flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-4">Welcome to Misfit!</h2>
         <p className="text-xl mb-6 max-w-2xl">
@@ -31,7 +28,6 @@ export default function Home() {
         </Link>
       </main>
 
-      {/* Images */}
       <section className="flex gap-6 mt-12">
         <img
           src="https://via.placeholder.com/150"
