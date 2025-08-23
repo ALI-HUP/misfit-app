@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
 
       <main className="text-center flex flex-col items-center">
-        <h2 className="text-5xl font-extrabold my-7">Welcome to Misfit!</h2>
+        <h2 className="text-5xl font-extrabold my-10">Welcome to Misfit!</h2>
           <div className="text-lg">
             <p className="">
               One Step Away from Your Goal!!!
@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         <Link
           href="/essays"
-          className="p-5 my-7 bg-yellow-300 text-black rounded-lg font-bold hover:bg-yellow-200 transition"
+          className="p-5 my-10 bg-yellow-300 text-black rounded-lg font-bold hover:bg-yellow-200 transition"
         >
           Get Started...
         </Link>
