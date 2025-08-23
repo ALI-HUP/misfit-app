@@ -28,22 +28,29 @@ export default function Home() {
 
       <section className="flex gap-36 mt-8">
         <div className="flex flex-col items-center">
-          <Image
-            src={MotIcon}
-            alt="Motivation"
-            className="w-36 h-36 rounded-full border-5 border-white"
-          />
-          <label className="p-3">Be a Gymbo</label>
+          <Link
+            href="https://www.youtube.com/@parsabolor/videos"
+            className="rounded-lg font-semibold text-center"
+          >
+            <div className="flex flex-col gap-3">
+              <Image src={MotIcon} alt="Sponsor" className="w-36 h-36 rounded-full border-5 border-white" />
+              <label>Be a Gymbo</label>
+            </div>
+          </Link>
         </div>
 
         <div className="flex flex-col items-center">
-          <Image
-            src={YalIcon}
-            alt="Sponsor"
-            className="w-36 h-36 rounded-full border-4 border-white shadow-lg"
-          />
-          <label className="p-3">Our Sponsor: YAL</label>
+          <Link
+            href="https://yalshop.com/"
+            className="rounded-lg font-semibold text-center"
+          >
+            <div className="flex flex-col gap-3">
+              <Image src={YalIcon} alt="Sponsor" className="w-36 h-36 rounded-full border-5 border-white" />
+              <label>Our Sponsor: YAL</label>
+            </div>
+          </Link>
         </div>
+
       </section>
     </div>
   );
