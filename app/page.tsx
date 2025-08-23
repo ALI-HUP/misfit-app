@@ -23,11 +23,11 @@ export default function Home() {
         <Link
           href="/essays"
           className="px-4 py-3 sm:px-5 sm:py-4 my-6 sm:my-8 md:my-10 
-                     bg-yellow-300 text-black rounded-lg font-bold 
-                     hover:bg-yellow-200 transition-colors
-                     transform duration-300 hover:scale-[1.03] active:scale-[0.98]
-                     text-sm sm:text-base md:text-lg"
-        >
+          bg-yellow-300 text-black rounded-lg font-bold 
+          hover:bg-yellow-200 transition-colors
+            transform duration-300 hover:scale-[1.03] active:scale-[0.98]
+            text-sm sm:text-base md:text-lg"
+          >
           Get Started...
         </Link>
       </main>
