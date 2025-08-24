@@ -53,7 +53,7 @@ export default function Header() {
                 <Image
                   src={link.icon}
                   alt={link.label}
-                  className="w-8 h-8"
+                  className="w-7 h-7"
                 />
               </Link>
             );
@@ -61,12 +61,12 @@ export default function Header() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-[70px] h-[70px] rounded-full bg-red-800 shadow-lg flex items-center justify-center focus:outline-none"
+            className="w-16 h-16 rounded-full bg-red-800 shadow-lg flex items-center justify-center focus:outline-none"
           >
             <Image
               src={Up}
               alt="Menu Toggle"
-              className={`w-9 h-9 transition-transform duration-500 ${
+              className={`w-8 h-8 transition-transform duration-500 ${
                 menuOpen ? "rotate-180" : "rotate-0"
               }`}
             />
