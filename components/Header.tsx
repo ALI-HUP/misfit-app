@@ -24,7 +24,7 @@ export default function Header() {
       <header className="hidden md:flex w-[60%] m-6 p-4 px-7 justify-between items-center bg-red-800 rounded-full">
         <Link href="/" className="text-4xl font-bold">Misfit</Link>
         <nav className="text-lg space-x-8">
-          <Link href="/essays" className="hover:underline">Essays</Link>
+          <Link href="/articles" className="hover:underline">Articles</Link>
           <Link href="/videos" className="hover:underline">Videos</Link>
           <Link href="/contact" className="hover:underline">Contact</Link>
         </nav>

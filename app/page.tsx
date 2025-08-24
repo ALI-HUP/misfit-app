@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <Link
-          href="/essays"
+          href="/articles"
           className="px-4 py-3 sm:px-5 sm:py-4 my-6 sm:my-8 md:my-10 
           bg-yellow-300 text-black rounded-lg font-bold 
           hover:bg-yellow-200 transition-colors
