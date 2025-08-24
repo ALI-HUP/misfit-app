@@ -3,19 +3,18 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import Contect from "@/public/svg/contact.png";
+import Contact from "@/public/svg/contact.png";
 import Article from "@/public/svg/article.png";
 import Up from "@/public/svg/up.png";
 import Video from "@/public/svg/video.png";
-
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const mobileLinks = [
-    { href: "/essays", label: "Essays" },
-    { href: "/videos", label: "Videos" },
-    { href: "/contact", label: "Contact" },
+    { href: "/articles", icon: Article, label: "Articles" },
+    { href: "/videos", icon: Video, label: "Videos" },
+    { href: "/contact", icon: Contact, label: "Contact" },
   ];
 
   const spacing = 80;
@@ -46,21 +45,31 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="absolute w-16 h-16 rounded-full bg-red-500 shadow-lg flex items-center justify-center text-white font-semibold transition-all duration-300"
+                className="absolute w-16 h-16 rounded-full bg-red-500 shadow-lg flex items-center justify-center transition-all duration-500"
                 style={{
                   transform: `translateY(${y}px) scale(${menuOpen ? 1 : 0})`,
                 }}
               >
-                {link.label[0]}
+                <Image
+                  src={link.icon}
+                  alt={link.label}
+                  className="w-8 h-8"
+                />
               </Link>
             );
           })}
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-20 h-20 rounded-full bg-red-800 shadow-lg flex items-center justify-center text-white text-2xl font-bold focus:outline-none"
+            className="w-20 h-20 rounded-full bg-red-800 shadow-lg flex items-center justify-center focus:outline-none"
           >
-            +
+            <Image
+              src={Up}
+              alt="Menu Toggle"
+              className={`w-10 h-10 transition-transform duration-500 ${
+                menuOpen ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
         </div>
       </div>
