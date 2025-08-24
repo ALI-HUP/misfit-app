@@ -2,6 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+import Contect from "@/public/svg/contact.png";
+import Article from "@/public/svg/article.png";
+import Up from "@/public/svg/up.png";
+import Video from "@/public/svg/video.png";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +18,6 @@ export default function Header() {
     { href: "/contact", label: "Contact" },
   ];
 
-  const buttonSize = 16;
   const spacing = 80;
 
   return (
@@ -27,8 +32,10 @@ export default function Header() {
       </header>
 
       <div className="md:hidden">
-        <div className="flex justify-start items-center w-full px-6 py-4 bg-red-600/70">
-          <Link href="/" className="text-2xl font-bold">Misfit</Link>
+        <div className="w-screen bg-red-800 px-6 py-5 text-left">
+          <Link href="/" className="text-4xl font-bold block">
+            Misfit
+          </Link>
         </div>
 
         <div className="fixed bottom-6 right-6 z-50">
@@ -51,7 +58,7 @@ export default function Header() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-16 h-16 rounded-full bg-red-700 shadow-lg flex items-center justify-center text-white text-2xl font-bold focus:outline-none"
+            className="w-20 h-20 rounded-full bg-red-800 shadow-lg flex items-center justify-center text-white text-2xl font-bold focus:outline-none"
           >
             +
           </button>
