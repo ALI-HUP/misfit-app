@@ -32,7 +32,7 @@ export default function Header() {
 
       <div className="md:hidden">
         <div className="w-screen bg-red-800 px-6 py-5 text-left">
-          <Link href="/" className="text-4xl font-bold block">
+          <Link href="/" className="text-3xl font-bold block">
             Misfit
           </Link>
         </div>
@@ -61,12 +61,12 @@ export default function Header() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-20 h-20 rounded-full bg-red-800 shadow-lg flex items-center justify-center focus:outline-none"
+            className="w-[70px] h-[70px] rounded-full bg-red-800 shadow-lg flex items-center justify-center focus:outline-none"
           >
             <Image
               src={Up}
               alt="Menu Toggle"
-              className={`w-10 h-10 transition-transform duration-500 ${
+              className={`w-9 h-9 transition-transform duration-500 ${
                 menuOpen ? "rotate-180" : "rotate-0"
               }`}
             />
