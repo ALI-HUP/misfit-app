@@ -15,11 +15,6 @@ export default function Articles() {
       content:
         "Short content here. No truncation needed. But it still works fine.",
     },
-    {
-      title: "Road to Pro - Week 3",
-      content:
-        "Very long content again — Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque quae voluptate sint molestiae quas voluptatibus dignissimos illo sequi dolor rem modi non quod tempore optio. Voluptatibus eaque ex provident! Even more text to make it clearly overflow and test truncation.",
-    },
   ];
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
