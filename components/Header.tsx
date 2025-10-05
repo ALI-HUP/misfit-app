@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Contact from "@/public/svg/contact.png";
 import Article from "@/public/svg/article.png";
+import Discord from "@/public/svg/discord.png";
 import Up from "@/public/svg/up.png";
 import Video from "@/public/svg/video.png";
 
@@ -15,6 +16,7 @@ export default function Header() {
     { href: "/articles", icon: Article, label: "Articles" },
     { href: "/videos", icon: Video, label: "Videos" },
     { href: "/contact", icon: Contact, label: "Contact" },
+    { href: "/discord", icon: Discord, label: "Discord" },
   ];
 
   const spacing = 80;
