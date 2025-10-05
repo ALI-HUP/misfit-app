@@ -1,24 +1,14 @@
 'use client';
 import { useEffect } from 'react';
 
-// اضافه کردن این بخش به بالای فایل برای رفع ارور TS
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      widgetbot: any;
-    }
-  }
-}
-
 type Props = {
   serverId: string;
   channelId: string;
-  height?: string; // مثل "600px"
+  height?: string;
 };
 
 export default function DiscordChannel({ serverId, channelId, height = '600px' }: Props) {
   useEffect(() => {
-    // اگر اسکریپت از قبل اضافه شده، دوباره اضافه نکن
     if (document.getElementById('widgetbot-script')) return;
 
     const s = document.createElement('script');
@@ -31,6 +21,7 @@ export default function DiscordChannel({ serverId, channelId, height = '600px' }
   return (
     <div className="max-w-4xl w-full px-4 py-6">
       <div className="border rounded-2xl overflow-hidden shadow-md">
+        {/* @ts-ignore */}
         <widgetbot
           server={serverId}
           channel={channelId}
