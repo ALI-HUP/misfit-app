@@ -21,14 +21,11 @@ export default function DiscordChannel({ serverId, channelId, height = '600px' }
   return (
     <div className="max-w-4xl w-full px-4 py-6">
       <div className="border rounded-2xl overflow-hidden shadow-md">
-        {/* @ts-ignore */}
-        <widgetbot
-          server={serverId}
-          channel={channelId}
-          width="100%"
-          height={height}
-          hideChannelList
-        ></widgetbot>
+        <div
+            dangerouslySetInnerHTML={{
+                __html: `<widgetbot server="${serverId}" channel="${channelId}" width="100%" height="${height}" hideChannelList></widgetbot>`,
+            }}
+        />
       </div>
     </div>
   );
