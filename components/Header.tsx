@@ -27,6 +27,7 @@ export default function Header() {
           <Link href="/articles" className="hover:underline">Articles</Link>
           <Link href="/videos" className="hover:underline">Videos</Link>
           <Link href="/contact" className="hover:underline">Contact</Link>
+          <Link href="/discord" className="hover:underline">Discord</Link>
         </nav>
       </header>
 
